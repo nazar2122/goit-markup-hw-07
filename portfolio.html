@@ -19,40 +19,42 @@
     <!-- шапка профиля -->
     <!--логотип сайту-->
     <header class="page-header">
-      <div class="container global">
-        <nav class="site-nav">
-          <a href="index.html" class="logo"
-            ><span class="logo-accent">Web</span>Studio</a
+      <div class="container page-header--global">
+        <nav class="page-header__site-nav">
+          <a href="index.html" class="page-header__logo"
+            ><span class="page-header__logo--accent">Web</span>Studio</a
           >
           <!--навігація на сторінки-->
           <ul class="nav-link">
-            <li class="header-navigation">
-              <a class="navigation" href="index.html">Студия</a>
+            <li class="nav-link__header">
+              <a class="nav-link__navigation" href="index.html">Студия</a>
             </li>
 
-            <li class="header-navigation current">
-              <a class="navigation current" href="./portfolio.html"
+            <li class="nav-link__header nav-link--current">
+              <a
+                class="nav-link__navigation nav-link--current"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
 
-            <li class="header-navigation">
-              <a class="navigation" href="">Контакты</a>
+            <li class="nav-link__header">
+              <a class="nav-link__navigation" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="mail">
-          <li class="mail-namb">
-            <a class="mail-header" href="emailto:info@devstudio.com">
-              <svg class="icon-mail" width="16" height="12">
+          <li class="mail__namb">
+            <a class="mail__link" href="emailto:info@devstudio.com">
+              <svg class="mail__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="mail-namb">
-            <a class="mail-header" href="tel:+380961111111">
-              <svg class="icon-mail" width="10px" height="16">
+          <li class="mail__namb">
+            <a class="mail__link" href="tel:+380961111111">
+              <svg class="mail__icon" width="10px" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -63,40 +65,45 @@
     </header>
     <main>
       <!-- КНОПКИ -->
-      <section class="item-images">
+      <section class="item-keys">
         <div class="container">
-          <h1 class="shadow">gallery</h1>
-          <ul class="btn">
-            <li class="buttons-portfolio">
-              <button class="buttons" type="button">Все</button>
+          <h1 class="item-keys__shadow">gallery</h1>
+          <ul class="item-keys__btn">
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">Все</button>
             </li>
-            <li class="buttons-portfolio">
-              <button class="buttons" type="button">Веб-сайты</button>
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">
+                Веб-сайты
+              </button>
             </li>
-            <li class="buttons-portfolio">
-              <button class="buttons" type="button">Приложения</button>
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">
+                Приложения
+              </button>
             </li>
-            <li class="buttons-portfolio">
-              <button class="buttons" type="button">Дизайн</button>
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">Дизайн</button>
             </li>
-            <li class="buttons-portfolio">
-              <button class="buttons" type="button">Маркетинг</button>
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- картинки -->
 
           <ul class="items">
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.1.jpg"
                     alt="Технокряк"
                     width="370"
                     height="294"
                   />
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -106,24 +113,23 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project">Технокряк</h2>
-                  <p class="place">Веб-сайт</p>
+                <div class="items__lable">
+                  <h2 class="items__project">Технокряк</h2>
+                  <p class="items__place">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.2.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
                     height="294"
                   />
 
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -133,25 +139,24 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project">
+                <div class="items__lable">
+                  <h2 class="items__project">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="place">Дизайн</p>
+                  <p class="items__place">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.3.jpg"
                     alt="Ресторан Seafood"
                     width="370"
                     height="294"
                   />
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -161,25 +166,24 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project">
+                <div class="items__lable">
+                  <h2 class="items__project">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="place">Приложение</p>
+                  <p class="items__place">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.4.jpg"
                     alt="Проект Prime"
                     width="370"
                     height="294"
                   />
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -189,23 +193,24 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project">Проект<span lang="en">Prime</span></h2>
-                  <p class="place">Маркетинг</p>
+                <div class="items__lable">
+                  <h2 class="items__project">
+                    Проект<span lang="en">Prime</span>
+                  </h2>
+                  <p class="items__place">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.5.jpg"
                     alt="Проект Boxes"
                     width="370"
                     height="294"
                   />
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -215,23 +220,24 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project">Проект<span lang="en">Boxes</span></h2>
-                  <p class="place">Приложение</p>
+                <div class="items__lable">
+                  <h2 class="items__project">
+                    Проект<span lang="en">Boxes</span>
+                  </h2>
+                  <p class="items__place">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.6.jpg"
                     alt="Inspiration has no Borders"
                     width="370"
                     height="294"
                   />
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -241,23 +247,24 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project" lang="en">Inspiration has no Borders</h2>
-                  <p class="place">Веб-сайт</p>
+                <div class="items__lable">
+                  <h2 class="items__project" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="items__place">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.7.jpg"
                     alt="Издание Limited Edition"
                     width="370"
                     height="294"
                   />
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -267,25 +274,24 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project">
+                <div class="items__lable">
+                  <h2 class="items__project">
                     Издание<span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="place">Дизайн</p>
+                  <p class="items__place">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.8.jpg"
                     alt="Проект LAB"
                     width="370"
                     height="294"
                   />
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -295,23 +301,24 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project">Проект<span lang="en">LAB</span></h2>
-                  <p class="place">Маркетинг</p>
+                <div class="items__lable">
+                  <h2 class="items__project">
+                    Проект<span lang="en">LAB</span>
+                  </h2>
+                  <p class="items__place">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="list-items">
-              <a class="tumb-item" href="">
-                <div class="tumb-portfolio">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
                   <img
-                    class="project-img"
                     src="./images/img.9.jpg"
                     alt="Growing Business"
                     width="370"
                     height="294"
                   />
-                  <ul class="items-tumb">
+                  <ul class="items__tumb">
                     <li>
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
@@ -321,9 +328,9 @@
                   </ul>
                 </div>
 
-                <div class="items-img">
-                  <h2 class="project" lang="en">Growing Business</h2>
-                  <p class="place">Приложение</p>
+                <div class="items__lable">
+                  <h2 class="items__project" lang="en">Growing Business</h2>
+                  <p class="items__place">Приложение</p>
                 </div>
               </a>
             </li>
@@ -332,29 +339,29 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container box">
-        <div class="box-futer">
-          <a href="/index.html" class="logo-footer"
+      <div class="container footer--burnt">
+        <div class="footer__box">
+          <a href="/index.html" class="footer__logo"
             >Web<span class="logo-two">Studio</span></a
           >
           <address>
-            <ul class="nav-footer">
-              <li class="map">
+            <ul class="footer__nav">
+              <li class="footer__map">
                 <a
-                  class="map-googl"
+                  class="footer__googl"
                   href="https://goo.gl/maps/qnMu7uc59vrPXKZr5"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-contakt">
-                <a class="contakt" href="mailto:info@example.com"
+              <li class="footer__connection">
+                <a class="footer__contakt" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-contakt">
-                <a class="contakt" href="tel:+380961111111"
+              <li class="footer__connection">
+                <a class="footer__contakt" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -362,31 +369,31 @@
           </address>
         </div>
         <div class="footer-social">
-          <h2 class="futer-text">присоединяйтесь</h2>
-          <ul class="futer-social">
-            <li class="footer-item">
-              <a class="footer-link" href=""
+          <h2 class="footer-social__text">присоединяйтесь</h2>
+          <ul class="footer-social__meta">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
                 ><svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
-              <a class="footer-link" href="">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="">
                 <svg width="20" height="16.25">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
-              <a class="footer-link" href=""
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
                 ><svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
-              <a class="footer-link" href=""
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
                 ><svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -394,22 +401,19 @@
             </li>
           </ul>
         </div>
-
-        <div class="futer-sub">
-          <h2 class="futer-tekst">Подпишитесь на рассылку</h2>
-
-          <form class="subscribe">
+        <div class="footer__sub">
+          <h2 class="footer-sub__tekst">Подпишитесь на рассылку</h2>
+          <form class="footer-sub__subscribe">
             <input
-              class="form"
+              class="footer-sub__form"
               type="email"
               name="user-name"
               placeholder="E-mail"
             />
-
-            <button class="futer-btn" type="submit">
-              <span class="img-buton"
+            <button class="footer-sub__btn" type="submit">
+              <span class="footer-sub__img-button"
                 >Подписаться
-                <svg class="futer-img" width="24" height="24">
+                <svg class="futer__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-subscribe"></use>
                 </svg>
               </span>
