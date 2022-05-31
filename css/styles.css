@@ -10,7 +10,7 @@
 body {
   margin-top: 80px;
   font-family: Roboto, sans-serif;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 ul {
   list-style: none;
