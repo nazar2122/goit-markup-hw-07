@@ -34,6 +34,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* основний контейнер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 /* зкритий текс */
 .item-keys__shadow {
@@ -52,13 +59,7 @@ img {
   align-items: center;
   background-color: var(--primary-button-text-color);
 }
-/* основний контейнер */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
+
 .container.page-header--global {
   align-items: center;
   display: flex;
@@ -85,12 +86,13 @@ img {
   align-items: center;
   display: flex;
 }
-.header-navigatiot .nav-link__navigation + .nav-link__navigation {
+.nav-link__header {
   margin-left: 50px;
 }
-.nav-link .nav-link__header + .nav-link__header {
-  margin-left: 50px;
+.nav-link__header:first-child {
+  margin-left: 0px;
 }
+
 .nav-link {
   list-style: none;
   align-items: center;
@@ -163,8 +165,13 @@ img {
 .mail__icon:hover {
   fill: currentColor;
 }
-.mail .mail__namb + .mail__namb {
+
+.mail__namb {
   margin-left: 30px;
+}
+
+.mail__namb:first-child {
+  margin-left: 0px;
 }
 
 /* заголовок */
@@ -495,7 +502,7 @@ textarea::items__placeholder {
 }
 /* особливості */
 
-.hang {
+.section-feauture {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -503,8 +510,12 @@ textarea::items__placeholder {
   list-style: none;
   display: flex;
 }
-.feauture .feauture__item + .feauture__item {
+
+.feauture__item {
   margin-left: 30px;
+}
+.feauture__item:first-child {
+  margin-left: 0px;
 }
 .feauture__caption {
   margin-bottom: 10px;
@@ -521,13 +532,13 @@ textarea::items__placeholder {
   justify-content: center;
   width: 270px;
   height: 120px;
-
+  margin-left: 30px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-.feauture .feauture__group + .feauture__group {
-  margin-left: 30px;
+.feauture__group:first-child {
+  margin-left: 0px;
 }
 
 .feauture__text {
@@ -551,14 +562,15 @@ textarea::items__placeholder {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.company__item .company__group + .company__group {
-  margin-left: 30px;
+.company__group:first-child {
+  margin-left: 0px;
 }
 .company__item {
   list-style: none;
   display: flex;
 }
 .company__group {
+  margin-left: 30px;
   position: relative;
 }
 
@@ -616,17 +628,18 @@ textarea::items__placeholder {
   text-align: center;
 }
 
-.social {
+.team-social {
   display: flex;
   list-style: none;
 }
-.social .social__item + .social__item {
-  margin-left: 10px;
+.team-social__item:first-child {
+  margin-left: 0px;
 }
-.social__item {
+.team-social__item {
+  margin-left: 10px;
   border-radius: 50%;
 }
-.social__link {
+.team-social__link {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   border-radius: 50%;
   display: flex;
@@ -636,8 +649,8 @@ textarea::items__placeholder {
   height: 44px;
   fill: #afb1b8;
 }
-.social__link:hover,
-.social__link:focus {
+.team-social__link:hover,
+.team-social__link:focus {
   background-color: var(--primary-touch-color);
   fill: var(--primary-button-text-color);
 }
@@ -665,7 +678,7 @@ textarea::items__placeholder {
 }
 
 /* Постоянные клиенты */
-.group {
+.section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--primary-button-text-color);
@@ -697,8 +710,12 @@ textarea::items__placeholder {
   display: flex;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.client__item .clients__image + .clients__image {
+.clients__image {
   margin-left: 30px;
+}
+
+.clients__image:first-child {
+  margin-left: 0px;
 }
 .clients__link:hover,
 .clients__link:focus {
@@ -797,8 +814,12 @@ textarea::items__placeholder {
   list-style: none;
 }
 
-.footer-social__meta .footer-social__item + .footer-social__item {
+.footer-social__item {
   margin-left: 10px;
+}
+
+.footer-social__item:first-child {
+  margin-left: 0px;
 }
 
 .footer-social__link {
@@ -838,9 +859,6 @@ textarea::items__placeholder {
 .footer-sub__subscribe {
   display: flex;
   align-items: center;
-}
-.clik {
-  position: relative;
 }
 
 .footer-sub__form {
@@ -886,7 +904,7 @@ textarea::items__placeholder {
   display: flex;
   align-items: center;
 }
-.futer__icon {
+.footer-sub__icon {
   fill: var(--primary-button-text-color);
   margin-left: 10px;
 }
@@ -902,7 +920,11 @@ textarea::items__placeholder {
   margin-bottom: 50px;
 }
 
-.item-keys__btn .item-keys__buttons-portfolio + .item-keys__buttons-portfolio {
+.item-keys__buttons-portfolio:first-child {
+  margin-left: 0px;
+}
+
+.item-keys__buttons-portfolio {
   margin-left: 8px;
 }
 .item-keys__buttons {
@@ -986,15 +1008,15 @@ textarea::items__placeholder {
   letter-spacing: 0.03em;
 }
 
-.items__list:nth-last-child(-n + 3) {
+.items__list:nth-last-child {
   margin-bottom: 0px;
 }
 
-.items__lable {
+.items-lable {
   padding: 20px 24px 20px 24px;
   text-align: initial;
 }
-.items__project {
+.items-lable__project {
   margin-bottom: 4px;
   color: var(--primary-text-color);
   font-style: normal;
@@ -1003,7 +1025,7 @@ textarea::items__placeholder {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.items__place {
+.items-lable__place {
   color: var(--primary-text-p-color);
   font-size: 16px;
   line-height: 1.87;
