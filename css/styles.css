@@ -5,6 +5,7 @@
   --primary-background-color: #f5f4fa;
   --primary-text-p-color: #757575;
   --primary-futer-color: #2f303a;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1) 500ms;
 }
 
 body {
@@ -121,7 +122,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
 }
 .nav-link__navigation:focus,
 .nav-link__navigation:hover {
@@ -145,7 +146,7 @@ img {
   text-decoration: none;
   color: var(--primary-text-p-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
 }
 .mail {
   list-style: none;
@@ -207,7 +208,7 @@ img {
 }
 /* кнопка 1 */
 .hero__button-one {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   border-width: 0px;
   display: inline-block;
   padding: 10px 32px;
@@ -225,7 +226,6 @@ img {
 }
 
 .hero__button-one:hover {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -244,7 +244,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
@@ -262,12 +262,11 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
 }
 
 .modal__script:hover,
 .modal__script:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   fill: var(--primary-touch-color);
 }
 .modal__script {
@@ -279,7 +278,7 @@ img {
   height: 30px;
   background: var(--primary-button-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   border-radius: 50%;
 }
 .modal__icon-close {
@@ -343,7 +342,7 @@ img {
   color: var(--primary-text-p-color);
 }
 .modal__name {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   cursor: pointer;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -357,7 +356,7 @@ img {
 }
 
 .modal__icon {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   color: var(--primary-text-color);
   fill: currentColor;
   z-index: 5;
@@ -368,7 +367,7 @@ img {
 
 .modal__comment {
   resize: none;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   outline: none;
   cursor: pointer;
   padding: 12px 16px;
@@ -385,7 +384,7 @@ img {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
-textarea::items__placeholder {
+textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .line.modal--last {
@@ -405,7 +404,7 @@ textarea::items__placeholder {
   margin-right: 7px;
 }
 .agreement__checkbox {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -426,7 +425,7 @@ textarea::items__placeholder {
 }
 
 .agreement__icon {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   top: 0;
   left: 0;
   position: absolute;
@@ -436,7 +435,6 @@ textarea::items__placeholder {
 }
 
 .agreement__unchecked {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   opacity: 1;
   top: 0;
   left: 0;
@@ -448,7 +446,7 @@ textarea::items__placeholder {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   background-color: var(--primary-button-text-color);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
 }
 .agreement__checkbox:hover ~ .agreement__unchecked,
 .agreement__checkbox:focus ~ .agreement__unchecked {
@@ -474,7 +472,7 @@ textarea::items__placeholder {
 }
 
 .modal .item-keys__btn {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   border-width: 0px;
   display: inline-block;
   margin: 0;
@@ -535,7 +533,7 @@ textarea::items__placeholder {
   margin-left: 30px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: #f5f4fa;
+  background-color: var(--primary-background-color);
 }
 .feauture__group:first-child {
   margin-left: 0px;
@@ -598,7 +596,7 @@ textarea::items__placeholder {
   padding-bottom: 94px;
   display: block;
   flex-wrap: wrap;
-  background-color: #f5f4fa;
+  background-color: var(--primary-background-color);
 }
 .team__item {
   display: flex;
@@ -607,7 +605,7 @@ textarea::items__placeholder {
 .team__group {
   width: calc((100% - 90px) / 4);
   margin-left: 30px;
-  background: #ffffff;
+  background: var(--primary-button-text-color);
   list-style: none;
   overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -640,7 +638,7 @@ textarea::items__placeholder {
   border-radius: 50%;
 }
 .team-social__link {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -687,7 +685,6 @@ textarea::items__placeholder {
 .clients__title {
   color: var(--primary-text-color);
   margin-bottom: 50px;
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -708,7 +705,7 @@ textarea::items__placeholder {
   align-items: center;
   justify-content: center;
   display: flex;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
 }
 .clients__image {
   margin-left: 30px;
@@ -754,7 +751,7 @@ textarea::items__placeholder {
 }
 
 .footer__googl {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   color: var(--primary-button-text-color);
   font-style: normal;
   font-size: 14px;
@@ -767,7 +764,7 @@ textarea::items__placeholder {
   color: var(--primary-touch-color);
 }
 .footer__contakt {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -823,7 +820,7 @@ textarea::items__placeholder {
 }
 
 .footer-social__link {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -877,7 +874,7 @@ textarea::items__placeholder {
 .footer-sub__btn {
   flex-direction: column;
   left: 40px;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   border-width: 0px;
   display: inline-block;
   padding: 10px 32px;
@@ -895,7 +892,6 @@ textarea::items__placeholder {
 }
 .footer-sub__btn:hover,
 .footer-sub__btn:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -928,7 +924,7 @@ textarea::items__placeholder {
   margin-left: 8px;
 }
 .item-keys__buttons {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   border-radius: 4px;
   padding: 6px 22px;
   display: inline-block;
@@ -936,7 +932,7 @@ textarea::items__placeholder {
   text-align: center;
   font-family: inherit;
   border: none;
-  background-color: #f5f4fa;
+  background-color: var(--primary-background-color);
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
@@ -962,7 +958,7 @@ textarea::items__placeholder {
   flex-wrap: wrap;
 }
 .items__list {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   cursor: pointer;
   border: 1px solid #eeeeee;
   width: calc((100% - 60px) / 3);
@@ -987,7 +983,6 @@ textarea::items__placeholder {
 
 .items__link:hover .items__tumb,
 .items__link:focus .items__tumb {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transform: translateY(0);
 }
 
@@ -998,9 +993,8 @@ textarea::items__placeholder {
   width: 100%;
   height: 100%;
   position: absolute;
-
   transform: translateY(100%);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--transition);
   color: var(--primary-button-text-color);
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
