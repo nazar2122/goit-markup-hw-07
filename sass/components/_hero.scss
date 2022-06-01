@@ -292,10 +292,8 @@ textarea::placeholder {
 .agreement {
     margin-bottom: 30px;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
+    @include Centerdflex (flex);
     position: relative;
-    display: flex;
     font-size: 14px;
     line-height: 1.71;
     color: var(--primary-text-p-color);

@@ -550,6 +550,9 @@ textarea::placeholder {
 .agreement {
   margin-bottom: 30px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -557,9 +560,6 @@ textarea::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-p-color);
@@ -635,12 +635,12 @@ textarea::placeholder {
 }
 
 .feauture__group {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -695,13 +695,6 @@ textarea::placeholder {
 }
 
 .company__tumb {
-  position: absolute;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,6 +704,13 @@ textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -852,20 +852,20 @@ textarea::placeholder {
 }
 
 .clients__link {
-  fill: #afb1b8;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  fill: #afb1b8;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -1004,9 +1004,6 @@ textarea::placeholder {
 }
 
 .footer-social__link {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,6 +1013,9 @@ textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border-radius: 50%;
   width: 44px;
   height: 44px;
   fill: var(--primary-button-text-color);
