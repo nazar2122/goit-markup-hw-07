@@ -1,0 +1,337 @@
+/* заголовок */
+.hero {
+    background-color: #c4c4c4;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    color: var(--primary-button-text-color);
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/header.jpg);
+}
+
+.hero__title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+
+/* кнопка 1 */
+.hero__button-one {
+    transition: var(--transition);
+    border-width: 0px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 200px;
+    text-align: center;
+    font-family: inherit;
+    background-color: var(--primary-touch-color);
+    color: var(--primary-button-text-color);
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+.hero__button-one:hover {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* Модальне вікно */
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    min-width: 530px;
+    min-height: 584px;
+    transform: translate(-50%, -50%) scale(1);
+    background: var(--primary-button-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.modal__script:hover,
+.modal__script:focus {
+    fill: var(--primary-touch-color);
+}
+
+.modal__script {
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: var(--primary-button-text-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border-radius: 50%;
+}
+
+.modal__icon-close {
+    color: #000000;
+    background: var(--primary-button-text-color);
+}
+
+.modal__box label {
+    color: var(--primary-text-p-color);
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+
+    border-radius: 4px;
+}
+
+.modal__box input:hover,
+.modal__box input:focus {
+    outline: none;
+    border: 1px solid var(--primary-touch-color);
+    border-radius: 4px;
+}
+
+.modal__box {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Оформлення модального вікна */
+
+.modal__tupe {
+    top: 79px;
+    left: 41px;
+    position: absolute;
+    display: flex;
+}
+
+.modal__text {
+    top: 51px;
+    left: 40px;
+    margin-bottom: 12px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.modal__name-holder {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-p-color);
+}
+
+.modal__name {
+    transition: var(--transition);
+    cursor: pointer;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+}
+
+.modal__box:focus-within .modal__icon {
+    color: var(--primary-touch-color);
+}
+
+.modal__icon {
+    transition: var(--transition);
+    color: var(--primary-text-color);
+    fill: currentColor;
+    z-index: 5;
+    top: 50%;
+    left: 15px;
+    position: absolute;
+}
+
+.modal__comment {
+    resize: none;
+    transition: var(--transition);
+    outline: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+}
+
+.modal__comment:hover,
+.modal__comment:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+}
+
+textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.line.modal--last {
+    margin-bottom: 20px;
+}
+
+.agreement__container {
+    @include Centerdflex (block);
+    position: relative;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.agreement__checkbox {
+    transition: var(--transition);
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.agreement__checkbox:checked+.agreement__icon {
+    fill: var(--primary-touch-color);
+    opacity: 1;
+}
+
+.agreement__checkbox:checked~.agreement__unchecked {
+    opacity: 0;
+}
+
+.agreement__icon:hover,
+.agreement__icon:focus {
+    border: 2px solid var(--primary-touch-color);
+}
+
+.agreement__icon {
+    transition: var(--transition);
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    width: 16px;
+    height: 15px;
+}
+
+.agreement__unchecked {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    background-color: var(--primary-button-text-color);
+    transition: var(--transition);
+}
+
+.agreement__checkbox:hover~.agreement__unchecked,
+.agreement__checkbox:focus~.agreement__unchecked {
+    border: 2px solid var(--primary-touch-color);
+}
+
+.agreement {
+    margin-bottom: 30px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-p-color);
+    letter-spacing: 0.03em;
+}
+
+.agreement__link {
+    margin-left: 5px;
+    color: var(--primary-touch-color);
+    text-decoration-line: underline;
+}
+
+.modal .item-keys__btn {
+    transition: var(--transition);
+    border-width: 0px;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 200px;
+    text-align: center;
+    font-family: inherit;
+    background-color: var(--primary-touch-color);
+    color: var(--primary-button-text-color);
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal .item-keys__btn:hover,
+.modal .item-keys__btn:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
