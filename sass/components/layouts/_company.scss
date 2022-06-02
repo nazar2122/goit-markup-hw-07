@@ -3,15 +3,14 @@
   &__title {
     margin-bottom: 50px;
     color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+
+    @include fonts(700, 36px, 1.16, 0.03em);
     text-align: center;
   }
 }
 
 .company__item {
+  @include display(none, flex);
   list-style: none;
   display: flex;
   .company__group {
@@ -22,14 +21,12 @@
     margin-left: 0px;
   }
   .company__tumb {
-    @include Centerdflex(flex);
     position: absolute;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+
+    @include Centerdflex(flex);
+
+    @include fonts(700, 14px, 1.14, 0.03em, uppercase);
     text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     bottom: 0;
     left: 0;
     width: 100%;

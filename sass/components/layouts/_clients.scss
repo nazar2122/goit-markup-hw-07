@@ -6,15 +6,14 @@
   .clients__title {
     color: var(--primary-text-color);
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
     text-align: center;
+
+    @include fonts(700, 36px, 1.16, 0.03em);
   }
 }
 
 .client-item {
+  @include display(none, flex);
   display: flex;
   list-style: none;
   .client-item__image {
@@ -33,11 +32,10 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: var(--transition);
-  }
-
-  .client-item__link:hover,
-  .client-item__link:focus {
-    fill: var(--primary-touch-color);
-    border-color: var(--primary-touch-color);
+    &:hover,
+    &:focus {
+      fill: var(--primary-touch-color);
+      border-color: var(--primary-touch-color);
+    }
   }
 }

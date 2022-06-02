@@ -1,65 +1,12 @@
-/* заголовок */
-.hero {
-  background-color: #c4c4c4;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  color: var(--primary-button-text-color);
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/header.jpg);
-  &__title {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-  }
-  &__button-one {
-    transition: var(--transition);
-    border-width: 0px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 4px;
-    min-width: 200px;
-    text-align: center;
-    font-family: inherit;
-    background-color: var(--primary-touch-color);
-    color: var(--primary-button-text-color);
-    cursor: pointer;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-  }
-
-  &__button-one:hover {
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-  }
-}
-
-/* кнопка 1 */
-
-/* Модальне вікно */
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transition: var(--transition);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .backdrop {
@@ -87,24 +34,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: var(--transition);
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
 
-  .modal__icon-close {
-    color: #000000;
-    background: var(--primary-button-text-color);
-  }
   .modal__text {
     top: 51px;
     left: 40px;
     margin-bottom: 12px;
     color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.03em;
+
+    @include fonts(700, 20px, 1.15, 0.03em);
   }
 }
 
@@ -126,12 +64,10 @@
   .modal__box label {
     color: var(--primary-text-p-color);
     cursor: pointer;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
     margin-bottom: 4px;
-
     border-radius: 4px;
+
+    @include fonts(400, 12px, 1.16, 0.01em);
   }
 
   .modal__box input:hover,
@@ -144,9 +80,8 @@
     text-align: left;
     display: inline-block;
     margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+
+    @include fonts(400, 12px, 1.17, 0.01em);
     color: var(--primary-text-p-color);
   }
   .modal__name {
@@ -182,9 +117,8 @@
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+
+  @include fonts(400, 14px, 1.14, 0.01em);
   .modal__comment:hover,
   .modal__comment:focus {
     border: 1px solid #2196f3;
@@ -202,12 +136,12 @@
 .agreement {
   margin-bottom: 30px;
   cursor: pointer;
+
   @include Centerdflex(flex);
   position: relative;
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--primary-text-p-color);
-  letter-spacing: 0.03em;
+
+  @include fonts(400, 14px, 1.71, 0.03em);
   &__container {
     @include Centerdflex(block);
     position: relative;
