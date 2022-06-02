@@ -26,18 +26,7 @@
     @include fonts(900, 44px, 1.36, 0.06em, uppercase);
   }
   &__button-one {
-    transition: var(--transition);
-    border-width: 0px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 4px;
-    min-width: 200px;
-    text-align: center;
-    font-family: inherit;
-    background-color: var(--primary-touch-color);
-    color: var(--primary-button-text-color);
-    cursor: pointer;
-    @include fonts(700, 16px, 1.87, 0.06em);
+    @extend %hero-btn;
   }
 
   &__button-one:hover {

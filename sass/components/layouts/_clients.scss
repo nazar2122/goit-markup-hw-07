@@ -13,9 +13,7 @@
 }
 
 .client-item {
-  @include display(none, flex);
-  display: flex;
-  list-style: none;
+  @include display(none, flex, none);
   .client-item__image {
     margin-left: 30px;
   }

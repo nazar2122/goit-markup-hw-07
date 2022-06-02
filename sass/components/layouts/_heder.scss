@@ -10,8 +10,7 @@
 }
 
 .container.page-header--global {
-  align-items: center;
-  display: flex;
+  @include display(none, flex, center);
 }
 
 .page-header {
@@ -19,8 +18,7 @@
 }
 
 .page-header__site-nav {
-  align-items: center;
-  display: flex;
+  @include display(none, flex, center);
 }
 
 .nav-link__header {
@@ -32,10 +30,8 @@
 }
 
 .nav-link {
-  list-style: none;
-  align-items: center;
   margin-left: 93px;
-  display: flex;
+  @include display(none, flex, center);
 }
 
 .nav-link__navigation.nav-link--current {
@@ -67,7 +63,6 @@
 
 .mail {
   @include display(none, flex, none);
-  list-style: none;
   margin-left: auto;
 
   &__namb {
@@ -77,12 +72,12 @@
     }
   }
   &__link {
-    align-items: center;
+    @include display(none, flex, center);
+    @include fonts(500, 14px, 1.14, 0.02em);
+
     padding-top: 32px;
     padding-bottom: 32px;
-    display: flex;
     font-style: normal;
-    @include fonts(500, 14px, 1.14, 0.02em);
     text-decoration: none;
     color: var(--primary-text-p-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

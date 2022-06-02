@@ -165,16 +165,9 @@
     opacity: 1;
   }
 
-  &__checkbox:checked ~ .agreement__unchecked {
-    opacity: 0;
-  }
   &__checkbox:hover ~ &__unchecked,
   &__checkbox:focus ~ &__unchecked {
     border: 2px solid var(--primary-touch-color);
-  }
-  &__checkbox:checked + .agreement__icon {
-    fill: var(--primary-touch-color);
-    opacity: 1;
   }
 
   &__checkbox:checked ~ .agreement__unchecked {

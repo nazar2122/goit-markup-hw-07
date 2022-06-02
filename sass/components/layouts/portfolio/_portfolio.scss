@@ -5,8 +5,8 @@
   display: block;
   flex-wrap: wrap;
   .item-keys__btn {
-    list-style: none;
-    display: flex;
+    @include display(none, flex, none);
+
     justify-content: center;
     margin-bottom: 50px;
   }
@@ -19,8 +19,8 @@
 }
 
 .items {
-  list-style: none;
-  display: flex;
+  @include display(none, flex, none);
+
   flex-wrap: wrap;
   &__list {
     transition: var(--transition);

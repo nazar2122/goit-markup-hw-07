@@ -6,8 +6,7 @@
   padding-bottom: 60px;
 }
 .footer--burnt {
-  display: flex;
-  align-items: baseline;
+  @include display(none, flex, baseline);
   justify-content: space-between;
 }
 .footer__map {
@@ -58,8 +57,7 @@
 }
 
 .footer-social__meta {
-  display: flex;
-  list-style: none;
+  @include display(none, flex, none);
 
   .footer-social__item {
     margin-left: 10px;
@@ -71,6 +69,7 @@
 
   .footer-social__link {
     @include Centerdflex(flex);
+
     transition: var(--transition);
     border-radius: 50%;
     width: 44px;
@@ -89,9 +88,9 @@
   padding-top: 12px;
   flex-direction: column;
   margin-left: 100px;
-  @include display(none, flex);
-  display: flex;
-  list-style: none;
+
+  @include display(none, flex, none);
+
   .footer-sub__tekst {
     color: var(--primary-button-text-color);
     font-style: normal;
@@ -101,8 +100,6 @@
   }
   .footer-sub__subscribe {
     @include display(none, flex, center);
-    display: flex;
-    align-items: center;
   }
 
   .footer-sub__form {
@@ -120,8 +117,7 @@
   }
 
   .footer-sub__img-button {
-    display: flex;
-    align-items: center;
+    @include display(none, flex, center);
   }
 
   .footer-sub__icon {
