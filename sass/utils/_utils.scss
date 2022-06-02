@@ -45,8 +45,3 @@ img {
     text-align: center;
 }
 
-@mixin Centerdflex ($type) {
-    display: $type;
-    align-items: center;
-    justify-content: center;
-}

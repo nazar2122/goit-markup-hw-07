@@ -3,18 +3,16 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--primary-button-text-color);
-    
+    .clients__title {
+            color: var(--primary-text-color);
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            text-align: center;
+        }
 }
-.clients__title {
-    color: var(--primary-text-color);
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
 
 .client-item {
     display: flex;

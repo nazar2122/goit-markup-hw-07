@@ -57,6 +57,9 @@
 
 
 /* Модальне вікно */
+.line.modal--last {
+    margin-bottom: 20px;
+}
 .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -93,7 +96,7 @@
     .backdrop.is-hidden .modal {
             transform: translate(-50%, -50%) scale(1.1);
         }
-&__script {
+.modal__script {
     top: 8px;
     right: 8px;
     position: absolute;
@@ -105,11 +108,11 @@
     transition: var(--transition);
     border-radius: 50%;
 }
-&__icon-close {
+.modal__icon-close {
     color: #000000;
     background: var(--primary-button-text-color);
 }
-&__text {
+.modal__text {
     top: 51px;
     left: 40px;
     margin-bottom: 12px;
@@ -120,10 +123,10 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
-}
+}&
 
-&__script:hover,
-&__script:focus {
+.modal__script:hover,
+.modal__script:focus {
     fill: var(--primary-touch-color);
 }
 
@@ -150,6 +153,9 @@
         text-align: left;
         margin-bottom: 10px;
     }
+        .modal__box:focus-within .modal__icon {
+            color: var(--primary-touch-color);
+        }&
         &__box label {
             color: var(--primary-text-p-color);
             cursor: pointer;
@@ -194,9 +200,7 @@
                                                                     left: 15px;
                                                                     position: absolute;
                                                                 }
-&__box:focus-within &__icon {
-    color: var(--primary-touch-color);
-}
+
 }
 
 
@@ -235,9 +239,6 @@
 
 
 
-.line.modal--last {
-    margin-bottom: 20px;
-}
 
 
 
@@ -351,8 +352,8 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    & .item-keys__btn:hover,
-    & .item-keys__btn:focus {
+    .modal .item-keys__btn:hover,
+    .modal .item-keys__btn:focus {
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
